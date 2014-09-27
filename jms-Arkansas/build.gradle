@@ -22,6 +22,10 @@ test {
     systemProperties 'property': 'value'
 }
 
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.1'
+}
+
 task hello << {
  print "Hello Jon" 
 }
