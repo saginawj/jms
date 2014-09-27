@@ -8,7 +8,7 @@ public class hello {
 		System.out.println("second");
 	}
 	public static void thirdMethod(String[] args){
-		System.out.println("four");
+		System.out.println("five");
 	}
 
 }
