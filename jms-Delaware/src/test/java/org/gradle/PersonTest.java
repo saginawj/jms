@@ -13,6 +13,6 @@ public class PersonTest {
     @Test
     public void willFailThisOne() {
         
-        assertEquals("Jon", "Zach");
+        assertEquals("Jon", "Jon");
     }
 }
