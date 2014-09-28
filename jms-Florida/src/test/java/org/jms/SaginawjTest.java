@@ -21,4 +21,14 @@ public class SaginawjTest {
         Saginawj person = new Saginawj("Jon");
         assertEquals("Mike", person.getName());
     }
+    @Test
+    public void methodCheck() {
+        Saginawj person = new Saginawj("Jon");
+        assertEquals("Jon", person.getName());
+    }
+    @Test
+    public void methodCheck2() {
+        Saginawj person = new Saginawj("Jon");
+        assertEquals("Jon", person.getName());
+    }
 }
