@@ -1,13 +1,13 @@
 apply plugin: 'java'
 apply plugin: 'eclipse'
 
-sourceCompatibility = 1.5
-version = '1.0'
-jar {
-    manifest {
-        attributes 'Implementation-Title': 'Gradle Quickstart', 'Implementation-Version': version
-    }
-}
+//sourceCompatibility = 1.5
+//version = '1.0'
+//jar {
+ //   manifest {
+ //       attributes 'Implementation-Title': 'Gradle Quickstart', 'Implementation-Version': version
+//    }
+//}
 
 repositories {
     mavenCentral()
@@ -19,7 +19,19 @@ dependencies {
 }
 
 test {
-    systemProperties 'property': 'value'
+  // listen to events in the test execution lifecycle
+  beforeTest { descriptor ->
+     logger.lifecycle("Running test: " + descriptor)
+  }
+  
+   testLogging {
+	events 'started', 'passed'
+	}
+
+  // listen to standard out and standard error of the test JVM(s)
+  onOutput { descriptor, event ->
+     logger.lifecycle("Test: " + descriptor + " produced standard out/err: " + event.message )
+  }
 }
 
 uploadArchives {
