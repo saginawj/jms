@@ -1,0 +1,6 @@
+-classpath '/Users/saginawj/git/jmsRepo/jms-Colorado/product/build/classes/main:/Users/saginawj/git/jmsRepo/jms-Colorado/product/build/resources/main:/Users/saginawj/git/jmsRepo/jms-Colorado/my-lib/build/libs/my-lib-1.0.jar:/Users/saginawj/.gradle/caches/modules-2/files-2.1/commons-collections/commons-collections/3.2/f951934aa5ae5a88d7e6dfaa6d32307d834a88be/commons-collections-3.2.jar'
+-d '/Users/saginawj/git/jmsRepo/jms-Colorado/product/build/docs/javadoc'
+-doctitle 'product 1.0 API'
+-quiet 
+-windowtitle 'product 1.0 API'
+'/Users/saginawj/git/jmsRepo/jms-Colorado/product/src/main/java/my/cool/app/Runner.java'

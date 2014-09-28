@@ -1,0 +1,7 @@
+-classpath '/Users/saginawj/git/jmsRepo/jms-Colorado/my-lib/build/classes/main:/Users/saginawj/git/jmsRepo/jms-Colorado/my-lib/build/resources/main:/Users/saginawj/.gradle/caches/modules-2/files-2.1/commons-collections/commons-collections/3.2/f951934aa5ae5a88d7e6dfaa6d32307d834a88be/commons-collections-3.2.jar'
+-d '/Users/saginawj/git/jmsRepo/jms-Colorado/my-lib/build/docs/javadoc'
+-doctitle 'my-lib 1.0 API'
+-quiet 
+-windowtitle 'my-lib 1.0 API'
+'/Users/saginawj/git/jmsRepo/jms-Colorado/my-lib/src/main/java/my/cool/lib/CoolLib.java'
+'/Users/saginawj/git/jmsRepo/jms-Colorado/my-lib/src/main/java/org/gradle/Person.java'
