@@ -27,6 +27,7 @@ uploadArchives {
 
 test {
 	ignoreFailures = true
+	reports.html.enabled = true
 
   // listen to events in the test execution lifecycle
   //beforeTest { descriptor ->
