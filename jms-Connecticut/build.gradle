@@ -1,0 +1,31 @@
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'eclipse'
+
+    repositories {
+       mavenCentral()
+    }
+
+    dependencies {
+        //testCompile 'junit:junit:4.8.2'
+        testCompile 'junit:junit:[4,)'
+    }
+
+   
+	test {
+	  // listen to events in the test execution lifecycle
+	  beforeTest { descriptor ->
+	     logger.lifecycle("Running test: " + descriptor)
+	  }
+	  
+	   testLogging {
+		events 'started', 'passed'
+		}
+	
+	  // listen to standard out and standard error of the test JVM(s)
+	  onOutput { descriptor, event ->
+	     logger.lifecycle("Test: " + descriptor + " produced standard out/err: " + event.message )
+	  }
+
+}
+}
