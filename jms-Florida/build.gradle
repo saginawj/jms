@@ -7,7 +7,7 @@ apply plugin: 'eclipse'
 
 repositories {
     mavenCentral()
-    jcenter()  //for artifactory
+    //jcenter()  //for artifactory
 }
 
 dependencies {
@@ -52,8 +52,4 @@ test {
   }
   
   }
- 
- //FOR ARTIFACTORY
- 
-
  
