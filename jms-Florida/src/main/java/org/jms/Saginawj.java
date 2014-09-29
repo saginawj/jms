@@ -13,4 +13,8 @@ public class Saginawj {
     public String getName() {
         return name;
     }
+    
+    public String jog() {
+        return "I am jogging";
+    }
 }
