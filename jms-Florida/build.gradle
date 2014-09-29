@@ -1,8 +1,13 @@
 apply plugin: 'java'
 apply plugin: 'eclipse'
+//apply plugin: 'com.jfrog.artifactory' 
+//for artifactory
+//apply plugin: org.jfrog.gradle.plugin.artifactory.ArtifactoryPublicationsPlugin
+//apply plugin: com.adaptc.gradle.nexusworkflow.NexusWorkflowPlugin
 
 repositories {
     mavenCentral()
+    jcenter()  //for artifactory
 }
 
 dependencies {
@@ -45,5 +50,10 @@ test {
   onOutput { descriptor, event ->
      logger.lifecycle("Test: " + descriptor + " produced standard out/err: " + event.message )
   }
-    
-}
+  
+  }
+ 
+ //FOR ARTIFACTORY
+ 
+
+ 
