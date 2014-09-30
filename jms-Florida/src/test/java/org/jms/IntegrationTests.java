@@ -32,4 +32,9 @@ public class IntegrationTests {
         Saginawj person = new Saginawj("Jon");
         assertEquals("Jon", person.getName());
     }
+    @Test
+    public void methodCheck5() {
+        Saginawj person = new Saginawj("Jon");
+        assertEquals("Mary", person.getName());
+    }
 }
