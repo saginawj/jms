@@ -5,7 +5,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class IntegrationTests {
+public class 	 {
     @Test
     public void canConstructAPersonWithAName() {
         Saginawj person = new Saginawj("Jon");
@@ -24,6 +24,6 @@ public class IntegrationTests {
     @Test
     public void methodCheck3() {
         Saginawj person = new Saginawj("Jon");
-        assertEquals("Jon", person.getName());
+        assertEquals("Steve", person.getName());
     }
 }
