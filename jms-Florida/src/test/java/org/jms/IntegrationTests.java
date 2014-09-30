@@ -5,11 +5,11 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class 	 {
+public class IntegrationTests {
     @Test
     public void canConstructAPersonWithAName() {
         Saginawj person = new Saginawj("Jon");
-        assertEquals("Jon", person.getName());
+        assertEquals("Steve", person.getName());
     }
     @Test
     public void testWillPass() {
@@ -24,6 +24,6 @@ public class 	 {
     @Test
     public void methodCheck3() {
         Saginawj person = new Saginawj("Jon");
-        assertEquals("Steve", person.getName());
+        assertEquals("Jon", person.getName());
     }
 }
