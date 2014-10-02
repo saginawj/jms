@@ -29,3 +29,7 @@ uploadArchives {
        }
     }
 }
+
+task hello << {
+	println 'Hello'
+	}
