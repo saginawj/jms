@@ -14,6 +14,9 @@
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="Gradle: _Users_saginawj_git_jmsRepo_jms_FakeProject_CSS_aFakeJar_v1_jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: commons-collections-3.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: junit-4.12-beta-2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: hamcrest-core-1.3" level="project" />
   </component>
 </module>
 

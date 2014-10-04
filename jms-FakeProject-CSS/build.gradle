@@ -72,6 +72,7 @@ artifactory {
       //username = 'resolver'       //Optional resolver user name (leave out to use anonymous resolution)
       //password = 'resolverPaS*'   //The resolver password
       maven = true                //Resolve Maven-style artifacts and descriptors (true by default)
+        //maven = false
     }
   }
   // Redefine basic properties of the build info object
