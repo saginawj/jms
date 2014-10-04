@@ -35,6 +35,7 @@ apply plugin: "com.jfrog.artifactory"
 repositories {
 	mavenCentral()
 	flatDir dirs: "${projectDir}"
+
 }
 configurations {
 	compile
@@ -59,8 +60,6 @@ artifactory {
       //password = 'deployerPaS*'       //The publisher password
     }
     defaults {
-        //This closure defines defaults for all 'artifactoryPublish' tasks of all projects the plugin is applied to
-       // publications ('mavenJava')                     //Optional list of publications (names or objects) to publish.
 		publications ('mavenJava')  
 
         publishBuildInfo = true   //Publish build-info to Artifactory (true by default)
