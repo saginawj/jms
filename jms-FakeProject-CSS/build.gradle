@@ -38,6 +38,7 @@ repositories {
 }
 configurations {
 	compile
+    //sme text here to change
 }
 dependencies {
     compile group: 'commons-collections', name: 'commons-collections', version: '3.2'
