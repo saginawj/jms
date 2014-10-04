@@ -47,7 +47,6 @@ dependencies {
     compile files('aFakeJar-v1.jar')
 }
 
-
 //ARTIFACTORY SCRIPT
 artifactory {
   contextUrl = 'http://localhost:8081/artifactory' 
