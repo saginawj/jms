@@ -1,15 +1,16 @@
 apply plugin: 'java'
-apply plugin: 'eclipse'
-apply plugin: 'maven'
-apply plugin: 'maven-publish'
-//apply plugin: 'artifactory-publish'
+apply plugin: 'eclipse'	
+apply plugin: 'groovy'
+
+sourceCompatibility = 1.8
+version = '2.0'
 
 //Artifactory Buildscript
 buildscript {
   repositories {
     jcenter()
     maven {
-            url 'http://localhost:8081/artifactory'  //'http://localhost:8081/artifactory/plugins-release'
+            url 'http://localhost:8081/artifactory/plugins-release'
             credentials {
                 username = "${artifactory_user}"
                 password = "${artifactory_password}"
@@ -20,15 +21,6 @@ buildscript {
   }
 }
 }
-
-publishing {
-    publications {
-        mavenJava(MavenPublication) {
-            from components.java
-        }
-    }
-}
-
 apply plugin: "com.jfrog.artifactory"
 //Artifactory Buildscript
 
@@ -60,7 +52,7 @@ artifactory {
     defaults {
         //This closure defines defaults for all 'artifactoryPublish' tasks of all projects the plugin is applied to
        // publications ('mavenJava')                     //Optional list of publications (names or objects) to publish.
-		publications ('mavenJava')  
+		publications ()  
 
         publishBuildInfo = true   //Publish build-info to Artifactory (true by default)
         publishArtifacts = true   //Publish artifacts to Artifactory (true by default)
@@ -84,5 +76,4 @@ artifactory {
 
 
 
-
-
+//ARTIFACTORY SCRIPT
