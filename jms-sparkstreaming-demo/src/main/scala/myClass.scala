@@ -7,7 +7,7 @@ import org.apache.spark.streaming._
 
 class myClass {
 
-  //def main(args:Array[String])
+
 
   println("start this")
 
