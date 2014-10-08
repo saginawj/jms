@@ -1,1 +1,7 @@
 //a placeholder for more stuff.
+task fake {
+    println("a great fake task to address an issue")
+    printlin("ok fixed it")
+    println("a third line to print")
+    println("this code should address Story25")
+}
