@@ -2,25 +2,44 @@
  * Created by saginawj on 10/8/14.
  */
 
-import org.apache.spark._
-import org.apache.spark.streaming._
+import java.io.PrintWriter
+
+import org.apache.hadoop.conf.Configuration
+import org.apache.hadoop.fs.{Path, FileSystem}
 
 object myObject {
 
   def main(args:Array[String]): Unit = {
 
-    println("start this")
+    //nc -lk 9999
+    val address = "localhost"
+    val port = 9999
 
-    val appName = "myClass"
-    val master = "master"
+    //execute streaming
+    val demoStream = new demoSparkStreaming()
+    demoStream.runStream(address, port)
 
-    //here are comments i added
-    val conf = new SparkConf().setAppName(appName).setMaster(master)
-    val ssc =  new StreamingContext(conf, Seconds(1))
 
-    println("end this")
+    //val demoSpark = new demoSpark()
+    // demoSpark.runSpark
 
+
+    /*
+    //HDFS Test
+    val conf = new Configuration()
+    val fs= FileSystem.get(conf)
+    val output = fs.create(new Path("/your/path"))
+    val writer = new PrintWriter(output)
+    try {
+      writer.write(firstRow)
+      writer.write("\n")
+      writer.write(restData)
+    }
+    finally {
+      writer.close()
+    }
+
+    */
 
   }
-
 }
