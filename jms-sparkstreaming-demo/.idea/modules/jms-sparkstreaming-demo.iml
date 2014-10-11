@@ -28,7 +28,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="SBT: org.scala-lang:scala-library:2.10.4" level="project" />
     <orderEntry type="library" name="SBT: colt:colt:1.2.0" level="project" />
     <orderEntry type="library" name="SBT: com.clearspring.analytics:stream:2.7.0" level="project" />
     <orderEntry type="library" name="SBT: com.codahale.metrics:metrics-core:3.0.0" level="project" />
@@ -55,10 +54,8 @@
     <orderEntry type="library" name="SBT: commons-configuration:commons-configuration:1.6" level="project" />
     <orderEntry type="library" name="SBT: commons-digester:commons-digester:1.8" level="project" />
     <orderEntry type="library" name="SBT: commons-el:commons-el:1.0" level="project" />
-    <orderEntry type="library" name="SBT: commons-httpclient:commons-httpclient:3.1" level="project" />
     <orderEntry type="library" name="SBT: commons-io:commons-io:2.4" level="project" />
     <orderEntry type="library" name="SBT: commons-lang:commons-lang:2.4" level="project" />
-    <orderEntry type="library" name="SBT: commons-logging:commons-logging:1.1.1" level="project" />
     <orderEntry type="library" name="SBT: commons-net:commons-net:2.2" level="project" />
     <orderEntry type="library" name="SBT: concurrent:concurrent:1.3.4" level="project" />
     <orderEntry type="library" name="SBT: hsqldb:hsqldb:1.8.0.10" level="project" />
@@ -66,7 +63,6 @@
     <orderEntry type="library" name="SBT: io.netty:netty-all:4.0.23.Final" level="project" />
     <orderEntry type="library" name="SBT: jline:jline:0.9.94" level="project" />
     <orderEntry type="library" name="SBT: log4j:log4j:1.2.17" level="project" />
-    <orderEntry type="library" name="SBT: net.java.dev.jets3t:jets3t:0.7.1" level="project" />
     <orderEntry type="library" name="SBT: net.jpountz.lz4:lz4:1.2.0" level="project" />
     <orderEntry type="library" name="SBT: net.sf.py4j:py4j:0.8.2.1" level="project" />
     <orderEntry type="library" name="SBT: org.apache.commons:commons-lang3:3.3.2" level="project" />
@@ -119,8 +115,17 @@
     <orderEntry type="library" name="SBT: org.xerial.snappy:snappy-java:1.0.5.3" level="project" />
     <orderEntry type="library" name="SBT: oro:oro:2.0.8" level="project" />
     <orderEntry type="library" name="SBT: xmlenc:xmlenc:0.52" level="project" />
+    <orderEntry type="library" scope="TEST" name="SBT: org.scala-lang:scala-library:2.11.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="SBT: org.scala-lang:scala-reflect:2.11.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="SBT: org.scala-lang.modules:scala-xml_2.11:1.0.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="SBT: org.scalatest:scalatest_2.11:2.2.1" level="project" />
+    <orderEntry type="library" name="SBT: org.scala-lang:scala-library:2.10.4" level="project" />
+    <orderEntry type="library" name="SBT: com.amazonaws:aws-java-sdk:1.0.002" level="project" />
+    <orderEntry type="library" name="SBT: commons-httpclient:commons-httpclient:3.1" level="project" />
+    <orderEntry type="library" name="SBT: commons-logging:commons-logging:1.2" level="project" />
+    <orderEntry type="library" name="SBT: net.java.dev.jets3t:jets3t:0.7.1" level="project" />
+    <orderEntry type="library" name="SBT: org.twitter4j:twitter4j-core:4.0.2" level="project" />
     <orderEntry type="library" name="SBT: org.apache.spark:spark-streaming-twitter_2.10:1.1.0" level="project" />
-    <orderEntry type="library" name="SBT: org.twitter4j:twitter4j-core:3.0.3" level="project" />
     <orderEntry type="library" name="SBT: org.twitter4j:twitter4j-stream:3.0.3" level="project" />
   </component>
 </module>

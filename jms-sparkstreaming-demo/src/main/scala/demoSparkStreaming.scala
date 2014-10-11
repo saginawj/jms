@@ -25,16 +25,15 @@ class  demoSparkStreaming {
     val pairs = words.map(word => (word, 1))
     val wordcount = pairs.reduceByKey(_ + _)
 
-
-
-
-
     wordcount.print()
     ssc.start()
+
+    val aws = new awsManager()
+
+    //wordcount.saveAsHadoopFiles("pre", "post")
+
     wordcount.saveAsTextFiles("/Users/saginawj/git/jmsRepo/jms-sparkstreaming-demo/hdfs/fileOct9.txt")
     ssc.awaitTermination()
-    //scala.tools.nsc.io.File("outputSpark.txt").writeAll(wordcount.toString)
-
 
   }
 

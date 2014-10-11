@@ -20,26 +20,7 @@ object myObject {
     demoStream.runStream(address, port)
 
 
-    //val demoSpark = new demoSpark()
-    // demoSpark.runSpark
 
-
-    /*
-    //HDFS Test
-    val conf = new Configuration()
-    val fs= FileSystem.get(conf)
-    val output = fs.create(new Path("/your/path"))
-    val writer = new PrintWriter(output)
-    try {
-      writer.write(firstRow)
-      writer.write("\n")
-      writer.write(restData)
-    }
-    finally {
-      writer.close()
-    }
-
-    */
 
   }
 }
