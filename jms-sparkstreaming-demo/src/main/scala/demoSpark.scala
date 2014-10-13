@@ -2,8 +2,10 @@
  * Created by saginawj on 10/9/14.
  */
 
-import org.apache.spark._
+
+
 import org.apache.spark.SparkConf
+import org.apache.spark.SparkContext
 import org.apache.spark.SparkContext._
 
 
@@ -25,5 +27,8 @@ def runSpark {
   wordCount.map(_.swap).sortByKey(false).take(5).foreach(println)
 
   }
+
+
+
 
 }

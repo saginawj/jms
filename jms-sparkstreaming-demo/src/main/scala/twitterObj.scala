@@ -31,11 +31,24 @@ object twitterObj extends App {
     .setMaster("local[4]")
     .setAppName("TestTwitter")
   val ssc = new StreamingContext(conf, Seconds(2))
-  val stream = TwitterUtils.createStream(ssc, Option(twitter.getAuthorization()), filters)
+
+  val tweets = TwitterUtils.createStream(ssc, Option(twitter.getAuthorization()))
   println("all created")
 
-  val hashTags = stream.flatMap(status => status.getText.split(" ").filter(_.startsWith("#")))
+  //val hashTags = tweets.flatMap(status => getTags(status))
+
+
+ val hashTags = tweets.flatMap(status => status.getText.split(" ").filter(_.startsWith("#")))
+
+
+
   println("i have my hash")
+
+
+ // println("")
+
+  ssc.start()
+  ssc.awaitTermination()
 
  // twitter.trends()
 
@@ -45,6 +58,7 @@ object twitterObj extends App {
   println("HashTags Count: ") + hashTags.count().toString()
 
   hashTags.print()
+
 
 
 
@@ -60,8 +74,7 @@ object twitterObj extends App {
   })
   */
 
-  ssc.start()
-  ssc.awaitTermination()
+
 
 
 }
